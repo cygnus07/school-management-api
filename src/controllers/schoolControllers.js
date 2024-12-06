@@ -8,11 +8,12 @@ export const addSchool = async (req,res) => {
 
     try {
         const [result] = await pool.query(
-            'Insert into schools (name, address, latitiude, longitude) values (?,?,?,?)',
+            'Insert into schools (name, address, latitude, longitude) values (?,?,?,?)',
             [name, address, latitude, longitude]
         )
         res.status(201).json({ message: "School added successfully", id: result.insertId})
     } catch (error) {
+        console.log(error)
         res.status(500).json({ message: "Error while adding the school"})
     }
 }

@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.post('/addSchool', addSchool)
 
-router.get('/listSchool', listSchools)
+router.get('/listSchools', listSchools)
 
 
 export default router
