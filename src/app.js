@@ -17,7 +17,9 @@ app.use(express.json({
 
 // routes
 import schoolRoutes from './routes/schoolRoutes.js'
+import welcomeRoute from './routes/welcomeRoute.js'
 
 app.use('/api/v1', schoolRoutes)
+app.use('/', welcomeRoute)
 
 export default app
