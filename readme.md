@@ -14,7 +14,7 @@ This is a Node.js API for managing school data. The API allows users to:
 
 - **Base API**: [https://school-management-api-9wlx.onrender.com](https://school-management-api-9wlx.onrender.com)
 - **Add School Endpoint**: [https://school-management-api-9wlx.onrender.com/api/addSchool](https://school-management-api-9wlx.onrender.com/api/addSchool)
-- **List Schools Endpoint**: [https://school-management-api-9wlx.onrender.com/api/listSchools](https://school-management-api-9wlx.onrender.com/api/listSchools)
+- **List Schools Endpoint (Example with Random Latitude & Longitude)**: [https://school-management-api-9wlx.onrender.com/api/listSchools?latitude=28.6139&longitude=77.2090](https://school-management-api-9wlx.onrender.com/api/listSchools?latitude=28.6139&longitude=77.2090)
 
 ---
 
