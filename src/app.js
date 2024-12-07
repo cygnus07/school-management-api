@@ -19,5 +19,9 @@ import welcomeRoute from './routes/welcomeRoute.js'
 
 app.use('/', welcomeRoute)
 app.use('/api/v1', schoolRoutes)
+app.use((req, res) => {
+    res.status(404).json({ error: 'Endpoint not found' });
+});
+
 
 export default app
