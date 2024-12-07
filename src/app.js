@@ -11,15 +11,13 @@ app.use(express.urlencoded({
     extended: true,
 
 }))
-app.use(express.json({
-    limit: "16kb"
-}))
+app.use(express.json({}))
 
 // routes
 import schoolRoutes from './routes/schoolRoutes.js'
 import welcomeRoute from './routes/welcomeRoute.js'
 
-app.use('/api/v1', schoolRoutes)
 app.use('/', welcomeRoute)
+app.use('/api/v1', schoolRoutes)
 
 export default app

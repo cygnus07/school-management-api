@@ -14,7 +14,7 @@ export const addSchool = async (req,res) => {
         res.status(201).json({ message: "School added successfully", id: result.insertId})
     } catch (error) {
         console.log(error)
-        res.status(500).json({ message: "Error while adding the school"})
+        res.status(500).json({ message: "Error while adding the school", error})
     }
 }
 
@@ -41,6 +41,7 @@ export const listSchools = async (req,res) => {
 
         res.status(200).json(sortedSchools)
     } catch (error) {
-        res.status(500).json({ message: "Error while getting the schools"})
+        console.log(error)
+        res.status(500).json({ message: "Error while getting the schools",error})
     }
 }
